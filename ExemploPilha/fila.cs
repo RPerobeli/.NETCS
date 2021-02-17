@@ -1,17 +1,35 @@
+using System;
 namespace ExemploPilha
 {
     public class Fila
     {
-        Posicao percorreFila;
+        Posicao head;
         public void Enqueue(object item)
         {
-            while(percorreFila != null)
+            if(this.head == null)
             {
-                percorreFila = percorreFila.next;
+                this.head = new Posicao(item);
             }
-            percorreFila = new Posicao(item);
-            
+            else
+            {
+                Posicao percorreFila = this.head;
+                while(percorreFila.next != null)
+                {
+                    percorreFila = percorreFila.next;
+                }
+                percorreFila.next = new Posicao(item);
 
+            }   
+        }
+        public object Dequeue()
+        {
+            if(this.head == null)
+            {
+                throw new InvalidOperationException("A fila está vazia");
+            }
+            object resp =  this.head.item;
+            this.head = this.head.next;
+            return resp;
         }
         class Posicao
         {
