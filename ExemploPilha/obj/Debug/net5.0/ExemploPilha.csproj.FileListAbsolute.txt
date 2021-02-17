@@ -1,0 +1,16 @@
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\bin\Debug\net5.0\ExemploPilha.exe
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\bin\Debug\net5.0\ExemploPilha.deps.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\bin\Debug\net5.0\ExemploPilha.runtimeconfig.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\bin\Debug\net5.0\ExemploPilha.runtimeconfig.dev.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\bin\Debug\net5.0\ExemploPilha.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\bin\Debug\net5.0\ref\ExemploPilha.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\bin\Debug\net5.0\ExemploPilha.pdb
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\obj\Debug\net5.0\ExemploPilha.csprojAssemblyReference.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\obj\Debug\net5.0\ExemploPilha.GeneratedMSBuildEditorConfig.editorconfig
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\obj\Debug\net5.0\ExemploPilha.AssemblyInfoInputs.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\obj\Debug\net5.0\ExemploPilha.AssemblyInfo.cs
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\obj\Debug\net5.0\ExemploPilha.csproj.CoreCompileInputs.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\obj\Debug\net5.0\ExemploPilha.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\obj\Debug\net5.0\ref\ExemploPilha.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\obj\Debug\net5.0\ExemploPilha.pdb
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\ExemploPilha\obj\Debug\net5.0\ExemploPilha.genruntimeconfig.cache
