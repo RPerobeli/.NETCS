@@ -1,0 +1,16 @@
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\bin\Debug\net5.0\PrimeiraAplicacao.exe
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\bin\Debug\net5.0\PrimeiraAplicacao.deps.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\bin\Debug\net5.0\PrimeiraAplicacao.runtimeconfig.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\bin\Debug\net5.0\PrimeiraAplicacao.runtimeconfig.dev.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\bin\Debug\net5.0\PrimeiraAplicacao.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\bin\Debug\net5.0\ref\PrimeiraAplicacao.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\bin\Debug\net5.0\PrimeiraAplicacao.pdb
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\obj\Debug\net5.0\PrimeiraAplicacao.csprojAssemblyReference.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\obj\Debug\net5.0\PrimeiraAplicacao.GeneratedMSBuildEditorConfig.editorconfig
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\obj\Debug\net5.0\PrimeiraAplicacao.AssemblyInfoInputs.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\obj\Debug\net5.0\PrimeiraAplicacao.AssemblyInfo.cs
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\obj\Debug\net5.0\PrimeiraAplicacao.csproj.CoreCompileInputs.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\obj\Debug\net5.0\PrimeiraAplicacao.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\obj\Debug\net5.0\ref\PrimeiraAplicacao.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\obj\Debug\net5.0\PrimeiraAplicacao.pdb
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\PrimeiraAplicacao\obj\Debug\net5.0\PrimeiraAplicacao.genruntimeconfig.cache
