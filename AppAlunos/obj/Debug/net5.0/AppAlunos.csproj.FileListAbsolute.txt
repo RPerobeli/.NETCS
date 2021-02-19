@@ -1,0 +1,16 @@
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\bin\Debug\net5.0\AppAlunos.exe
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\bin\Debug\net5.0\AppAlunos.deps.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\bin\Debug\net5.0\AppAlunos.runtimeconfig.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\bin\Debug\net5.0\AppAlunos.runtimeconfig.dev.json
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\bin\Debug\net5.0\AppAlunos.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\bin\Debug\net5.0\ref\AppAlunos.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\bin\Debug\net5.0\AppAlunos.pdb
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\obj\Debug\net5.0\AppAlunos.csprojAssemblyReference.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\obj\Debug\net5.0\AppAlunos.GeneratedMSBuildEditorConfig.editorconfig
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\obj\Debug\net5.0\AppAlunos.AssemblyInfoInputs.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\obj\Debug\net5.0\AppAlunos.AssemblyInfo.cs
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\obj\Debug\net5.0\AppAlunos.csproj.CoreCompileInputs.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\obj\Debug\net5.0\AppAlunos.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\obj\Debug\net5.0\ref\AppAlunos.dll
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\obj\Debug\net5.0\AppAlunos.pdb
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\AppAlunos\obj\Debug\net5.0\AppAlunos.genruntimeconfig.cache
