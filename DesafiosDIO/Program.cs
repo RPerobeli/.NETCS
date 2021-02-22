@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace DesafiosDIO
 {
@@ -21,8 +22,9 @@ namespace DesafiosDIO
             {
                 throw new Exception("string de entrada é nula, ou vazia.");
             }
-            int.TryParse(strDist, out distancia);
-            double.TryParse(Console.ReadLine(), out combustivelGasto);
+            distancia = int.Parse(strDist, CultureInfo.InvariantCulture);
+            combustivelGasto = double.Parse(Console.ReadLine(),CultureInfo.InvariantCulture);
+            combustivelGasto = Math.Round(combustivelGasto,1);
             
             if(distancia<0 || combustivelGasto<=0)
             {
@@ -69,61 +71,98 @@ namespace DesafiosDIO
         }
         static void AumentaSalario()
         {
-            double salario, reajuste, novoSalario, percentual;
-            string salarioString = Console.ReadLine();
-            if(string.IsNullOrEmpty(salarioString))
-            {
-                throw new ArgumentException();
-            }
-            salario = Convert.ToDouble(salarioString);
-            salario = Math.Round(salario,2);
+            // double salario, reajuste, novoSalario, percentual;
+            // string salarioString = Console.ReadLine();
+            // if(string.IsNullOrEmpty(salarioString))
+            // {
+            //     throw new ArgumentException();
+            // }
+            // salario = double.Parse(salarioString,CultureInfo.InvariantCulture);
+            // if(salario < 0)
+            // {
+            //     throw new ArgumentOutOfRangeException();
+            // }
+            // if(salario >= 0.00 && salario <= 400.00)
+            // {
+            //     reajuste = salario * 0.15; 
+            //     novoSalario = salario + reajuste;
+            //     if(salario == 0)
+            //     {
+            //         percentual = 0;
+            //     }
+            //     else
+            //     {
+            //          percentual = ((novoSalario - salario) * 100/salario);
+            //     }
+            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
+            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
+            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
+            // }
+            // else if (salario > 400.00 && salario <= 800.00)
+            // {
+            //     reajuste = salario * 0.12; 
+            //     novoSalario = salario + reajuste;
+            //     percentual = ((novoSalario - salario) * 100/salario);
+            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
+            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
+            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
+            // }
+            // else if (salario > 800.00 && salario <= 1200.00)
+            // {
+            //     reajuste = salario * 0.1; 
+            //     novoSalario = salario + reajuste;
+            //     percentual = ((novoSalario - salario) * 100/salario);
+            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
+            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
+            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
+            // }
+            // else if (salario > 1200.00 && salario <= 2000.00)
+            // {
+            //     reajuste = salario * 0.07; 
+            //     novoSalario = salario + reajuste;
+            //     percentual = ((novoSalario - salario) * 100/salario);
+            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
+            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
+            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
+            // }
+            // else
+            // {
+            //     //Acima de 2000
+            //     reajuste = salario * 0.04; 
+            //     novoSalario = salario + reajuste;
+            //     percentual = ((novoSalario - salario) * 100/salario);
+            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
+            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
+            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
+            // }
 
-            if(salario >= 0.00 && salario <= 400.00)
-            {
-                reajuste = Math.Round(salario * 0.15,2); 
-                novoSalario = Math.Round(salario + reajuste,2);
-                percentual = Math.Round(((novoSalario - salario) * 100/salario),2);
-                Console.WriteLine($"Novo salario: {novoSalario.ToString("N2").Replace(".","")}" );
-                Console.WriteLine($"Reajuste ganho: {reajuste.ToString("N2").Replace(".","")}");
-                Console.WriteLine($"Em percentual: {percentual} %");
-            }
+        
+            double salario = 0, novoSalario = 0, percentual = 0;
+
+            double.TryParse(Console.ReadLine().Replace(".", ","), out salario);
+            
+            if (salario > 0 && salario <= 400.00)
+                percentual = 15;
             else if (salario > 400.00 && salario <= 800.00)
-            {
-                reajuste = Math.Round(salario * 0.12,2); 
-                novoSalario = Math.Round(salario + reajuste,2);
-                percentual = Math.Round(((novoSalario - salario) * 100/salario),2);
-                Console.WriteLine($"Novo salario: {novoSalario.ToString("N2").Replace(".","")}" );
-                Console.WriteLine($"Reajuste ganho: {reajuste.ToString("N2").Replace(".","")}");
-                Console.WriteLine($"Em percentual: {percentual} %");
-            }
+                percentual = 12;
             else if (salario > 800.00 && salario <= 1200.00)
-            {
-                reajuste = Math.Round(salario * 0.1,2); 
-                novoSalario = Math.Round(salario + reajuste,2);
-                percentual = Math.Round(((novoSalario - salario) * 100 /salario),2);
-                Console.WriteLine($"Novo salario: {novoSalario.ToString("N2").Replace(".","")}" );
-                Console.WriteLine($"Reajuste ganho: {reajuste.ToString("N2").Replace(".","")}");
-                Console.WriteLine($"Em percentual: {percentual} %");
-            }
+                percentual = 10;
             else if (salario > 1200.00 && salario <= 2000.00)
+                percentual = 7;
+            else if (salario > 2000.00)
+                percentual = 4;
+            else if(salario < 0)
             {
-                reajuste = Math.Round(salario * 0.07,2); 
-                novoSalario = Math.Round(salario + reajuste,2);
-                percentual = Math.Round(((novoSalario - salario) * 100/salario),2);
-                Console.WriteLine($"Novo salario: {novoSalario.ToString("N2").Replace(".","")}" );
-                Console.WriteLine($"Reajuste ganho: {reajuste.ToString("N2").Replace(".","")}");
-                Console.WriteLine($"Em percentual: {percentual} %");
+                throw new ArgumentOutOfRangeException();
             }
-            else
-            {
-                //Acima de 2000
-                reajuste = Math.Round(salario * 0.04,2); 
-                novoSalario = Math.Round(salario + reajuste,2);
-                percentual = Math.Round(((novoSalario - salario) * 100/salario),2);
-                Console.WriteLine($"Novo salario: {novoSalario.ToString("N2").Replace(".","")}" );
-                Console.WriteLine($"Reajuste ganho: {reajuste.ToString("N2").Replace(".","")}");
-                Console.WriteLine($"Em percentual: {percentual} %");
-            }
+
+            novoSalario = salario + (salario * (percentual / 100));
+
+            var culture = CultureInfo.InvariantCulture;
+
+            Console.WriteLine($"Novo salario: {novoSalario.ToString("F2", culture)}");
+            Console.WriteLine($"Reajuste ganho: {(novoSalario - salario).ToString("F2", culture)}");
+            Console.WriteLine($"Em percentual: {percentual} %");
         }
     }
 }
