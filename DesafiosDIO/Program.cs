@@ -9,8 +9,8 @@ namespace DesafiosDIO
         {
             //CalculaConsumoMedio();
             //DDD();
-            AumentaSalario();
-            
+            //AumentaSalario();
+            AumentoPopulacional();
         }
         static void CalculaConsumoMedio()
         {
@@ -139,7 +139,7 @@ namespace DesafiosDIO
         
             double salario = 0, novoSalario = 0, percentual = 0;
 
-            double.TryParse(Console.ReadLine().Replace(".", ","), out salario);
+            double.TryParse(Console.ReadLine(), out salario);
             
             if (salario > 0 && salario <= 400.00)
                 percentual = 15;
@@ -151,11 +151,7 @@ namespace DesafiosDIO
                 percentual = 7;
             else if (salario > 2000.00)
                 percentual = 4;
-            else if(salario < 0)
-            {
-                throw new ArgumentOutOfRangeException();
-            }
-
+            
             novoSalario = salario + (salario * (percentual / 100));
 
             var culture = CultureInfo.InvariantCulture;
@@ -163,6 +159,58 @@ namespace DesafiosDIO
             Console.WriteLine($"Novo salario: {novoSalario.ToString("F2", culture)}");
             Console.WriteLine($"Reajuste ganho: {(novoSalario - salario).ToString("F2", culture)}");
             Console.WriteLine($"Em percentual: {percentual} %");
+        }
+        static void AumentoPopulacional()
+        {
+            //Console.WriteLine("Quantidade");
+            int t = Convert.ToInt32(Console.ReadLine());
+            double[] arrayList = new double[4];
+            int pa, pb;
+            double cpa, cpb;
+            int anos;
+
+            var culture = CultureInfo.InvariantCulture;
+
+            for (int i = 0; i < t; i++)
+            {
+                anos = 0;
+                string[] valores = Console.ReadLine().Split(" ");
+                pa = int.Parse(valores[0]);
+                pb = int.Parse(valores[1]);
+
+               //declare as variaveis corretamente
+                cpa = double.Parse(valores[2],culture)/100;
+                //Console.WriteLine(cpa);
+                cpb = double.Parse(valores[3],culture)/100;
+                //Console.WriteLine(cpb);
+                while (pa <= pb)
+                {
+
+                   //complete o while
+                   pa = Convert.ToInt32((1+cpa)*pa);
+                   pb = Convert.ToInt32((1+cpb)*pb);
+                   anos++;
+                   if (anos > 100)
+                    {
+                        Console.WriteLine("Mais de 1 seculo");
+                        break;
+                    }
+                }
+
+                if (anos <= 100)
+                {
+                   Console.WriteLine("{0} anos.", anos);
+                }
+            }
+// 8
+// 100 1100000 7.1 1.0
+// 500 56866 5.0 3.7
+// 654327 894521 8.4 3.2
+// 100 199 3.0 0.0
+// 190 200 0.2 0.1
+// 666 6660 10.0 9.0
+// 696 6969 1.9 1.8
+// 101 103 .5 .2
         }
     }
 }
