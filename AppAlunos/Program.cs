@@ -27,7 +27,7 @@ namespace AppAlunos
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
-                        break;
+                        //break;
                 }
                 opcaoUser = ObterOpcao();
             }
