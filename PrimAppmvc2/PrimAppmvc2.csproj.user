@@ -11,5 +11,6 @@
     <WebStackScaffolding_DbContextTypeFullName>PrimAppmvc2.Models.Context</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>PrimAppmvc220210309141647 - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

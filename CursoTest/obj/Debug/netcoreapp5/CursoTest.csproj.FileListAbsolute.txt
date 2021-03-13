@@ -1,0 +1,5 @@
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoTest\obj\Debug\netcoreapp5\CursoTest.csprojAssemblyReference.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoTest\obj\Debug\netcoreapp5\CursoTest.GeneratedMSBuildEditorConfig.editorconfig
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoTest\obj\Debug\netcoreapp5\CursoTest.AssemblyInfoInputs.cache
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoTest\obj\Debug\netcoreapp5\CursoTest.AssemblyInfo.cs
+G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoTest\obj\Debug\netcoreapp5\CursoTest.csproj.CoreCompileInputs.cache

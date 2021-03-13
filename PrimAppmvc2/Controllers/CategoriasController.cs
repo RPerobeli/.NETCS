@@ -32,8 +32,7 @@ namespace PrimAppmvc2.Controllers
                 return NotFound();
             }
 
-            var categoria = await _context.categorias
-                .FirstOrDefaultAsync(m => m.id == id);
+            var categoria = await _context.categorias.FirstOrDefaultAsync(m => m.id == id);
             if (categoria == null)
             {
                 return NotFound();
