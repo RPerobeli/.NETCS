@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Globalization;
+using System.Collections.Generic;
 
 namespace DesafiosDIO
 {
@@ -10,7 +11,10 @@ namespace DesafiosDIO
             //CalculaConsumoMedio();
             //DDD();
             //AumentaSalario();
-            AumentoPopulacional();
+            // AumentoPopulacional();
+            //Quadrante();
+            // SuperMercado();
+            PinkCerebro();
         }
         static void CalculaConsumoMedio()
         {
@@ -202,15 +206,119 @@ namespace DesafiosDIO
                    Console.WriteLine("{0} anos.", anos);
                 }
             }
-// 8
-// 100 1100000 7.1 1.0
-// 500 56866 5.0 3.7
-// 654327 894521 8.4 3.2
-// 100 199 3.0 0.0
-// 190 200 0.2 0.1
-// 666 6660 10.0 9.0
-// 696 6969 1.9 1.8
-// 101 103 .5 .2
+        }
+        static void Quadrante()
+        {
+            //implemente sua solução aqui
+            Console.WriteLine("poe");
+            string[] input = Console.ReadLine().Split(" ");
+            float x = float.Parse(input[0]);
+            float y = float.Parse(input[1]);
+            
+            if(x == 0 && y == 0)
+            {
+                Console.WriteLine("Origem");
+            }
+            if(x != 0 && y == 0)
+            {
+                Console.WriteLine("EixoX");
+            }
+            if(x == 0 && y != 0)
+            {
+                Console.WriteLine("EixoY");
+            }
+            if(x > 0 && y > 0)
+            {
+                Console.WriteLine("Q1");
+            }
+            if(x < 0 && y > 0)
+            {
+                Console.WriteLine("Q2");
+            }
+            if(x < 0 && y < 0)
+            {
+                Console.WriteLine("Q3");
+            }
+            if(x > 0 && y < 0)
+            {
+                Console.WriteLine("Q4");
+            }
+        }
+        static void SuperMercado()
+        {
+            int totalDeCasosDeTeste = int.Parse(Console.ReadLine());
+            // Implemente a solução aqui
+            for(int i=0; i<totalDeCasosDeTeste; i++)
+            {
+                string[] lista = Console.ReadLine().Split(" ");
+                List<string> listaSemRepeticao = new List<string>();
+                int count;
+
+                foreach(string produto in lista)
+                {
+                    // Tira as repeticoes da lista
+                    count = 0;
+                    for(int j=0; j< listaSemRepeticao.Count; j++)
+                    {
+                        if(produto == listaSemRepeticao[j])
+                        {
+                            count++;
+                        }
+                    }
+                    if(count == 0)
+                    {
+                        listaSemRepeticao.Add(produto);
+                    }                    
+                }
+                //Coloca em ordem alfabetica e imprime na tela
+                listaSemRepeticao.Sort();
+                for(int k = 0; k < listaSemRepeticao.Count; k++)
+                {
+                    Console.Write($"{listaSemRepeticao[k]} ");
+                }
+                Console.WriteLine();
+                
+            }
+        }
+        static void PinkCerebro()
+        {
+            int tam = int.Parse(Console.ReadLine());
+
+            //declare suas variaveis aqui
+            int count2 =0;
+            int count3 =0;
+            int count4 =0;
+            int count5 =0;   
+
+            string[] n = Console.ReadLine().Split(" ");
+            int valor;
+            //continue a solução
+            for (int i=0; i<tam;i++)
+            {
+                valor = int.Parse(n[i]);
+                if(valor % 2 == 0)
+                {
+                    count2++;
+                }
+                if(valor % 3 == 0)
+                {
+                    count3++;
+                }
+                if(valor % 4 == 0)
+                {
+                    count4++;
+                }
+                if(valor % 5 == 0)
+                {
+                    count5++;
+                }
+      
+            }
+            Console.WriteLine("{0} Multiplo(s) de 2",count2);
+            Console.WriteLine("{0} Multiplo(s) de 3",count3);
+            Console.WriteLine("{0} Multiplo(s) de 4",count4);
+            Console.WriteLine("{0} Multiplo(s) de 5",count5);
+
         }
     }
 }

@@ -163,6 +163,3 @@ G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoAPI\obj\Debug\net5.0\CursoAPI.dll
 G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoAPI\obj\Debug\net5.0\ref\CursoAPI.dll
 G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoAPI\obj\Debug\net5.0\CursoAPI.pdb
 G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoAPI\obj\Debug\net5.0\CursoAPI.genruntimeconfig.cache
-G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoAPI\bin\Debug\net5.0\PrimAppmvc2.deps.json
-G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoAPI\bin\Debug\net5.0\PrimAppmvc2.runtimeconfig.json
-G:\Meu Drive\DESENVOLVEDOR\.NET+C#\CursoAPI\bin\Debug\net5.0\PrimAppmvc2.runtimeconfig.dev.json
