@@ -14,7 +14,9 @@ namespace DesafiosDIO
             // AumentoPopulacional();
             //Quadrante();
             // SuperMercado();
-            PinkCerebro();
+            // PinkCerebro();
+            DivisaoEuclidiana();
+
         }
         static void CalculaConsumoMedio()
         {
@@ -75,72 +77,7 @@ namespace DesafiosDIO
         }
         static void AumentaSalario()
         {
-            // double salario, reajuste, novoSalario, percentual;
-            // string salarioString = Console.ReadLine();
-            // if(string.IsNullOrEmpty(salarioString))
-            // {
-            //     throw new ArgumentException();
-            // }
-            // salario = double.Parse(salarioString,CultureInfo.InvariantCulture);
-            // if(salario < 0)
-            // {
-            //     throw new ArgumentOutOfRangeException();
-            // }
-            // if(salario >= 0.00 && salario <= 400.00)
-            // {
-            //     reajuste = salario * 0.15; 
-            //     novoSalario = salario + reajuste;
-            //     if(salario == 0)
-            //     {
-            //         percentual = 0;
-            //     }
-            //     else
-            //     {
-            //          percentual = ((novoSalario - salario) * 100/salario);
-            //     }
-            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
-            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
-            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
-            // }
-            // else if (salario > 400.00 && salario <= 800.00)
-            // {
-            //     reajuste = salario * 0.12; 
-            //     novoSalario = salario + reajuste;
-            //     percentual = ((novoSalario - salario) * 100/salario);
-            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
-            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
-            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
-            // }
-            // else if (salario > 800.00 && salario <= 1200.00)
-            // {
-            //     reajuste = salario * 0.1; 
-            //     novoSalario = salario + reajuste;
-            //     percentual = ((novoSalario - salario) * 100/salario);
-            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
-            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
-            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
-            // }
-            // else if (salario > 1200.00 && salario <= 2000.00)
-            // {
-            //     reajuste = salario * 0.07; 
-            //     novoSalario = salario + reajuste;
-            //     percentual = ((novoSalario - salario) * 100/salario);
-            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
-            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
-            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
-            // }
-            // else
-            // {
-            //     //Acima de 2000
-            //     reajuste = salario * 0.04; 
-            //     novoSalario = salario + reajuste;
-            //     percentual = ((novoSalario - salario) * 100/salario);
-            //     Console.WriteLine("Novo salario: {0:0.00}",novoSalario.ToString("0.00") );
-            //     Console.WriteLine("Reajuste ganho: {0:0.00}", reajuste.ToString("0.00"));
-            //     Console.WriteLine("Em percentual: {0:0} %", percentual);
-            // }
-
-        
+                   
             double salario = 0, novoSalario = 0, percentual = 0;
 
             double.TryParse(Console.ReadLine(), out salario);
@@ -319,6 +256,25 @@ namespace DesafiosDIO
             Console.WriteLine("{0} Multiplo(s) de 4",count4);
             Console.WriteLine("{0} Multiplo(s) de 5",count5);
 
+        }
+        static void DivisaoEuclidiana()
+        {
+            string[] valores = Console.ReadLine().Split();
+            int a = int.Parse(valores[0]);
+            int b = int.Parse(valores[1]);
+            int q, r;
+
+           //complete o código aqui
+            q = a/b;
+            r = a%b;
+            
+            if(r<0)
+            {
+              r = r - (b);
+              q = (a-r)/b;
+            }
+            
+            Console.WriteLine("{0} {1}", q, r);
         }
     }
 }
